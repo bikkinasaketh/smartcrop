@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Smart Crop Recommendation</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+background:#1b5e20;
+padding:15px 40px;
+color:white;
+position:fixed;
+width:100%;
+z-index:10;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+/* HOME SECTION */
+
+#home{
+
+height:100vh;
+
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("/static/images/image.png");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+color:white;
+text-align:center;
+
+}
+
+#home h1{
+font-size:50px;
+text-shadow:2px 2px 10px black;
+}
+
+#home p{
+font-size:20px;
+text-shadow:1px 1px 8px black;
+}
+
+button{
+
+padding:15px 30px;
+background:#2e7d32;
+border:none;
+color:white;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+/* ABOUT SECTION */
+
+#about{
+
+padding:120px 40px;
+text-align:center;
+
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("/static/images/image1.jpg");
+
+background-size:cover;
+background-position:center;
+
+color:white;
+
+}
+
+#about h2{
+font-size:35px;
+text-shadow:2px 2px 10px black;
+}
+
+.features{
+
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:40px;
+flex-wrap:wrap;
+
+}
+
+.feature{
+
+background:rgba(255,255,255,0.2);
+backdrop-filter:blur(10px);
+padding:30px;
+width:250px;
+border-radius:12px;
+box-shadow:0px 5px 20px rgba(0,0,0,0.3);
+
+}
+
+/* CONTACT SECTION */
+
+#contact{
+
+padding:120px;
+
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("/static/images/image2.png");
+
+background-size:cover;
+background-position:center;
+
+text-align:center;
+color:white;
+
+}
+
+#contact h2{
+text-shadow:2px 2px 10px black;
+}
+
+input,textarea{
+
+width:300px;
+padding:12px;
+margin:10px;
+border-radius:8px;
+border:none;
+background:rgba(255,255,255,0.9);
+
+}
+
+#contact button{
+
+padding:14px 30px;
+background:#2e7d32;
+border:none;
+color:white;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+/* FOOTER */
+
+footer{
+
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:15px;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<h2>🌱 Smart Crop</h2>
+
+<div>
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a href="/login">Login</a>
+
+</div>
+
+</div>
+
+
+
+<!-- HOME -->
+
+<section id="home">
+
+<h1>Smart Crop Recommendation System</h1>
+
+<p>Predict the best crop using AI and soil data</p>
+
+<a href="/login">
+<button>Start Prediction</button>
+</a>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Our Project</h2>
+
+<p>
+
+Smart Crop Recommendation System helps farmers select the best crop
+based on soil nutrients, temperature, humidity and rainfall.
+Using Machine Learning algorithms, the system predicts the most
+suitable crop for higher yield and better farming decisions.
+
+</p>
+
+
+<div class="features">
+
+<div class="feature">
+
+<h3>🌱 Soil Analysis</h3>
+
+<p>Analyze soil nutrients like Nitrogen, Phosphorus and Potassium.</p>
+
+</div>
+
+<div class="feature">
+
+<h3>🌦 Climate Data</h3>
+
+<p>Temperature, humidity and rainfall analysis.</p>
+
+</div>
+
+<div class="feature">
+
+<h3>🤖 AI Prediction</h3>
+
+<p>Machine learning model predicts best crop.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p>Have questions? Contact our team.</p>
+
+<form>
+
+<input type="text" placeholder="Name"><br>
+
+<input type="email" placeholder="Email"><br>
+
+<textarea placeholder="Message"></textarea><br>
+
+<button>Send Message</button>
+
+</form>
+
+</section>
+
+
+
+<footer>
+
+© 2026 Smart Crop Recommendation System
+
+</footer>
+
+
+</body>
+</html>
