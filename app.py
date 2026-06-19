@@ -12,7 +12,7 @@ encoder = pickle.load(open("encoder.pkl","rb"))
 
 # MongoDB Atlas Connection
 client = MongoClient(
-"mongodb+srv://24p31f0011_db_user:Saki1234%40@cluster0.gag2vik.mongodb.net/?retryWrites=true&w=majority"
+"mongodb+srv://24p31f0011_db_user:Saki1234%40%24%25@cluster0.whyc5tj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 )
 
 db = client["smart_crop_db"]
