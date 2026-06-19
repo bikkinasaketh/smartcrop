@@ -1,5 +1,7 @@
-flask
+Flask
+gunicorn
+pymongo
+scikit-learn
 numpy
 pandas
-scikit-learn
-xgboost
+werkzeug
